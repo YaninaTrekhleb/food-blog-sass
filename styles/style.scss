@@ -1,7 +1,6 @@
-@import "_variables1";
-// @import "_variables2";
+@import "_variables";
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 body {
   margin: auto;
@@ -25,7 +24,7 @@ header {
       justify-content: flex-start;
     }
     
-    .top-banner-left h3 {
+    h3 {
       font-family: $topBannerFont;
       color: $topBannerFontColor;
     }
@@ -38,11 +37,165 @@ header {
 
     input[type=text],
     input[type=email] {
-      background-color: red;
+      color: $inputFontColor;
+      font-family: $inputFontFamily;
+      font-size: 12px;
+      padding: 5px 8px;
+      border: none;
+      border-radius: 5px;
+      letter-spacing: 2px;
     } 
+
+    input[type=submit] {
+      background-color: $submitButtonBackgroundColor;
+      color: $submitButtonFontColor;
+      font-size: $submitButtonFontSize;
+      padding: 5px 8px;
+      border: none;
+      border-radius: 10px;
+      letter-spacing: 2px;
+      margin: 0 5px;
+    }
   }
-
-
-
 }
 
+nav {
+  .nav-menu-position {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .nav-left-menu {
+      display: flex;
+      flex: 1;
+      justify-content: flex-start;
+      align-items: center;
+
+      h1 {
+        display: flex;
+        font-size: 50px;
+      }
+  
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        a {
+          text-decoration: none;
+          color: $navLinksFontColor;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: $navLinksFontSize; 
+        }
+      }
+    }
+
+    .nav-right-menu {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      align-items: center;
+
+      a {
+        padding: 7px;
+        text-decoration: none;
+        color: #787878;
+        align-self: center;
+      }
+    }
+  }
+}
+
+hr {
+  border-color: #c7c4c4;
+  opacity: 0.2;
+}
+
+  .main-dishes-section {
+
+    h2 {
+      color: $mainDishesFontColor;
+      margin: 10px;
+      font-size: 25px;
+    }
+
+    .main-three-dishes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      .dish-description {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+
+        img {
+          width: 100%;
+        }
+
+        h4 {
+          font-size: 20px;
+          color: $mainDishesTitleColor;
+          margin-bottom: 0;
+        }
+      }
+    }
+  } 
+
+  .about-me-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .about-me-description {
+      display: flex;
+      flex-direction: row;
+      flex: 2;
+      margin-right: 30px;
+      background-color: $aboutMeSectionBackgroundColor;
+      padding: 15px 40px 13px 15px;
+
+      .about-me-img {
+        display: flex;
+        flex: 1;
+
+        img {
+          height: auto;
+          width: 80%;
+          border-radius: 50%;
+        }
+      }
+
+      .about-me-text {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 18px;
+      }
+      
+    }
+
+    .about-dog {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      text-align: center;
+      background-color:  rgba(182, 159, 159, 0.192);
+
+      a {
+        color: rgb(65, 58, 58);
+        text-decoration: none;
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
-  <title>Food Blog</title>
+  <title>Food Blog Name</title>
 </head>
 <body>
   <header>
@@ -16,19 +16,19 @@
         <form action="/action_page.php">
           <input type="text" id="fname" name="fname" value="name" required>
           <input type="email" id="email" name="email" value="email" required>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Get it!">
         </form> 
       </div>
     </div>
   </header>
 
   <nav>
-    <div class="header-menu-position">
-      <div class="header-left-menu"> 
+    <div class="nav-menu-position">
+      <div class="nav-left-menu"> 
         <div class="main-title">
           <h1>BLOG NAME</h1>
         </div>
-        <div class="menu-nav">
+        <div class="nav-links">
           <a href="#">About</a>
           <a href="#">Recipes</a>
           <a href="#">Shop</a>
@@ -36,7 +36,7 @@
         </div>
       </div>
 
-      <div class="header-right-menu">
+      <div class="nav-right-menu">
         <a href="#">A<i class="fab fa-facebook-f"></i></a>
         <a href="#">B<i class="fab fa-instagram"></i></a>
         <a href="#">C<i class="fab fa-pinterest"></i></a>
@@ -44,40 +44,46 @@
       </div>
     </div>
   </nav>
+  <hr>
 
   <main>
-    <section>
+    <section class="main-dishes-section">
       <div>
         <h2>What to cook for today?</h2>
       </div>
       <div class="main-three-dishes">
-        <div>
-          <img src="" alt="">
+        <div class="dish-description">
+          <img src="./images/khloe-arledge-ND3edEmzcdQ-unsplash.jpg" alt="dinner">
           <h4>Dinner 1</h4>
-          <p></p>
+          <p>Foodfood</p>
         </div>
-        <div>
-          <img src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2017/10/high-protein-dinners-slow-cooker-meatballs-image.jpg" alt="" width="100">
+        <div class="dish-description">
+          <img src="./images/jenn-kosar-k5VGs9qQubc-unsplash.jpg" alt="dinner">
           <h4>Dinner 2</h4>
-          <p></p>
+          <p>Foodfood</p>
         </div>
-        <div>
-          <img src="" alt="">
+        <div class="dish-description">
+          <img src="./images/eiliv-sonas-aceron-JDEEsQKEm7I-unsplash.jpg" alt="dinner">
           <h4>Dinner 3</h4>
-          <p></p>
+          <p>Foodfood</p>
         </div>
       </div>
     </section>
 
     <section>
-      <div>
-        <div>
-          <h3>About me</h3>
-          <img src="" alt="">
+      <div class="about-me-section">
+        <div class="about-me-description">
+          <div class="about-me-img">
+            <img src="./images/sasha-freemind-nXo2ZsKHTHg-unsplash.jpg" alt="woman">
+          </div>
+          <div class="about-me-text">
+            <h3>Hi! Nice to meet you</h3> 
+            <p>Hello, my name is.Hello, my name isHello, my name isHello, my name isHello, my name isHello, my name is....</p>
+          </div>
         </div>
-        <div>
-          <img src="" alt="">
-          <p>Dog coworker</p>
+        <div class="about-dog">
+          <img src="./images/john-price-wzRQfEw9CMc-unsplash.jpg" alt="dog">
+          <a href="#">Meet my fluffy coworker</a>
         </div>
       </div>
     </section>
