@@ -199,3 +199,37 @@ hr {
       }
     }
   }
+
+  .article-aside-flex {
+    display: flex;
+    flex-direction: row;
+
+    .article-column {
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px;
+      flex: 3;
+
+      .article-content {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .aside-advertising {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .advertising-info {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
