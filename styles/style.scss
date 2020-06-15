@@ -1,12 +1,16 @@
 @import "_variables";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+// Imported Fonts.
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
 
 body {
   margin: auto;
   padding: 0;
   max-width: 950px;
   font-family: $mainFont;
+  color: $mainFontColor;
 }
 
 header {
@@ -74,6 +78,10 @@ nav {
       h1 {
         display: flex;
         font-size: 50px;
+        font-family: $mainTitleFont;
+        color: $mainTitleFontColor;
+        line-height: 50px;
+        text-transform: uppercase;
       }
   
       .nav-links {
