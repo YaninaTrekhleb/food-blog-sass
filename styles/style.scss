@@ -113,123 +113,239 @@ hr {
   opacity: 0.2;
 }
 
-  .main-dishes-section {
+.main-dishes-section {
 
-    h2 {
-      color: $mainDishesFontColor;
-      margin: 10px;
-      font-size: 25px;
-    }
+  h2 {
+    color: $mainDishesFontColor;
+    margin: 10px;
+    font-size: 25px;
+  }
 
-    .main-three-dishes {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-
-      .dish-description {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-
-        img {
-          width: 100%;
-        }
-
-        h4 {
-          font-size: 20px;
-          color: $mainDishesTitleColor;
-          margin-bottom: 0;
-        }
-      }
-    }
-  } 
-
-  .about-me-section {
+  .main-three-dishes {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
-    .about-me-description {
-      display: flex;
-      flex-direction: row;
-      flex: 2;
-      margin-right: 30px;
-      background-color: $aboutMeSectionBackgroundColor;
-      padding: 15px 40px 13px 15px;
-
-      .about-me-img {
-        display: flex;
-        flex: 1;
-
-        img {
-          height: auto;
-          width: 80%;
-          border-radius: 50%;
-        }
-      }
-
-      .about-me-text {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 18px;
-      }
-      
-    }
-
-    .about-dog {
+    .dish-description {
       display: flex;
       flex-direction: column;
-      flex: 1;
+      padding: 10px;
       text-align: center;
-      background-color:  rgba(182, 159, 159, 0.192);
-
-      a {
-        color: rgb(65, 58, 58);
-        text-decoration: none;
-        padding: 10px;
-        font-size: 18px;
-      }
 
       img {
         width: 100%;
-        height: auto;
+      }
+
+      h4 {
+        font-size: 16px;
+        color: $mainDishesTitleColor;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 22px;
+        color: violet;
       }
     }
   }
+} 
 
-  .article-aside-flex {
+.about-me-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .about-me-description {
     display: flex;
     flex-direction: row;
+    flex: 2;
+    margin-right: 30px;
+    background-color: $aboutMeSectionBackgroundColor;
+    padding: 15px 40px 13px 15px;
 
-    .article-column {
+    .about-me-img {
       display: flex;
-      flex-direction: column;
-      margin-right: 10px;
-      flex: 3;
+      flex: 1;
 
-      .article-content {
-        img {
-          width: 100%;
+      img {
+        height: auto;
+        width: 80%;
+        border-radius: 50%;
+      }
+    }
+
+    .about-me-text {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 18px;
+    }
+}
+
+.about-dog {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  background-color:  rgba(182, 159, 159, 0.192);
+
+  a {
+    color: rgb(65, 58, 58);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    }
+  }
+}
+
+.article-aside-flex {
+  display: flex;
+  flex-direction: row;
+
+  .article-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    flex: 3;
+
+    .article-content {
+      padding: 10px 15px;
+
+      .post {
+        display: flex;
+        flex-direction: row;
+
+        .post-image {
+          flex: 1;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .post-description {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          padding: 10px 15px;
+
+          .post-date {
+            p {
+              color: red;
+              font-size: 12px;
+              font-family: fantasy;
+              margin-bottom: 15px;
+              margin-top: 0;
+            }
+          }
+
+          h3 {
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 24px;
+            margin: 0;
+          }
+
+          p {
+            color: green;
+            font-size: 18px;
+            margin-bottom: 30px;
+          }
+
+          button {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 0, 0, 0.322);
+            border: none;
+            border-radius: 3px;
+            width: 50%;
+            color: white;
+            font-size: 14px;
+          }
         }
       }
     }
   }
+}
 
-  .aside-advertising {
+.aside-advertising {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .advertising-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+
+    h4 {
+      color: rgb(195, 204, 109);
+      text-align: center;
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 5px;
+    }
+  }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+
+  .footer-social,
+  .footer-organization,
+  .footer-information,
+  .footer-newsletter {
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin: 10px 20px; 
 
-    .advertising-info {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
+    h4 {
+      color: rgb(143, 104, 45);
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
 
-      img {
-        width: 100%;
+    p {
+      margin-bottom: 0;
+      color: #cf5454;
+    }
+
+    .sign-up-news {
+      input[type=email] {
+        color: gray;
+        font-family: "Lato", sans-serif;
+        font-size: 12px;
+        padding: 5px 8px;
+        border: 1px solid #ced4da;;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        font-family: 'Heebo', sans-serif;
+        color: #ffffff;
+        background-color: #969595dc;
+        border: 0;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 5px 10px;
+        letter-spacing: 2px;
       }
     }
   }
+}

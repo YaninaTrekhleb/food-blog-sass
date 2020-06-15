@@ -194,9 +194,15 @@ hr {
 }
 
 .main-dishes-section .main-three-dishes .dish-description h4 {
-  font-size: 20px;
+  font-size: 16px;
   color: #c4c478;
+  margin-top: 5px;
   margin-bottom: 0;
+}
+
+.main-dishes-section .main-three-dishes .dish-description p {
+  font-size: 22px;
+  color: violet;
 }
 
 .about-me-section {
@@ -311,8 +317,79 @@ hr {
           flex: 3;
 }
 
-.article-aside-flex .article-column .article-content img {
+.article-aside-flex .article-column .article-content {
+  padding: 10px 15px;
+}
+
+.article-aside-flex .article-column .article-content .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.article-aside-flex .article-column .article-content .post .post-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.article-aside-flex .article-column .article-content .post .post-image img {
   width: 100%;
+  height: auto;
+}
+
+.article-aside-flex .article-column .article-content .post .post-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 15px;
+}
+
+.article-aside-flex .article-column .article-content .post .post-description .post-date p {
+  color: red;
+  font-size: 12px;
+  font-family: fantasy;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.article-aside-flex .article-column .article-content .post .post-description h3 {
+  color: blue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+.article-aside-flex .article-column .article-content .post .post-description p {
+  color: green;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.article-aside-flex .article-column .article-content .post .post-description button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 0, 0, 0.322);
+  border: none;
+  border-radius: 3px;
+  width: 50%;
+  color: white;
+  font-size: 14px;
 }
 
 .aside-advertising {
@@ -341,5 +418,86 @@ hr {
 
 .aside-advertising .advertising-info img {
   width: 100%;
+}
+
+.aside-advertising .advertising-info h4 {
+  color: #c3cc6d;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 5px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer-social,
+footer .footer-organization,
+footer .footer-information,
+footer .footer-newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 10px 20px;
+}
+
+footer .footer-social h4,
+footer .footer-organization h4,
+footer .footer-information h4,
+footer .footer-newsletter h4 {
+  color: #8f682d;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+footer .footer-social p,
+footer .footer-organization p,
+footer .footer-information p,
+footer .footer-newsletter p {
+  margin-bottom: 0;
+  color: #cf5454;
+}
+
+footer .footer-social .sign-up-news input[type=email],
+footer .footer-organization .sign-up-news input[type=email],
+footer .footer-information .sign-up-news input[type=email],
+footer .footer-newsletter .sign-up-news input[type=email] {
+  color: gray;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  padding: 5px 8px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+footer .footer-social .sign-up-news button,
+footer .footer-organization .sign-up-news button,
+footer .footer-information .sign-up-news button,
+footer .footer-newsletter .sign-up-news button {
+  font-family: 'Heebo', sans-serif;
+  color: #ffffff;
+  background-color: #969595dc;
+  border: 0;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px 10px;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=style.css.map */
