@@ -65,7 +65,7 @@ header div.top-banner-right input[type=email] {
 }
 
 header div.top-banner-right input[type=submit] {
-  background-color: white;
+  background-color: #ffffff;
   color: #99abb9;
   font-size: 14px;
   padding: 5px 8px;
@@ -73,6 +73,11 @@ header div.top-banner-right input[type=submit] {
   border-radius: 10px;
   letter-spacing: 2px;
   margin: 0 5px;
+}
+
+header div.top-banner-right input[type=submit]:hover {
+  background-color: #99abb9;
+  color: #ffffff;
 }
 
 nav .nav-menu-position {
@@ -134,6 +139,10 @@ nav .nav-menu-position .nav-left-menu .nav-links a {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
+}
+
+nav .nav-menu-position .nav-left-menu .nav-links a:hover {
+  color: #526370;
 }
 
 nav .nav-menu-position .nav-right-menu {
@@ -202,14 +211,15 @@ hr {
 
 .main-dishes-section .main-three-dishes .dish-description h4 {
   font-size: 16px;
-  color: #c4c478;
+  color: #e8c77a;
   margin-top: 5px;
   margin-bottom: 0;
 }
 
 .main-dishes-section .main-three-dishes .dish-description p {
   font-size: 22px;
-  color: violet;
+  color: #545480;
+  margin-top: 10px;
 }
 
 .about-me-section {
@@ -237,7 +247,7 @@ hr {
       -ms-flex: 2;
           flex: 2;
   margin-right: 30px;
-  background-color: rgba(182, 159, 159, 0.192);
+  background-color: #c3d4de46;
   padding: 15px 40px 13px 15px;
 }
 
@@ -273,6 +283,15 @@ hr {
   font-size: 18px;
 }
 
+.about-me-section .about-me-description .about-me-text h3 {
+  color: #e2b49a;
+  margin-bottom: 5px;
+}
+
+.about-me-section .about-me-description .about-me-text p {
+  color: #545480;
+}
+
 .about-me-section .about-dog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,11 +304,11 @@ hr {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  background-color: rgba(182, 159, 159, 0.192);
+  background-color: #c3d4de46;
 }
 
 .about-me-section .about-dog a {
-  color: #413a3a;
+  color: #545480;
   text-decoration: none;
   padding: 10px;
   font-size: 18px;
@@ -364,7 +383,7 @@ hr {
 }
 
 .article-aside-flex .article-column .article-content .post .post-description .post-date p {
-  color: red;
+  color: #e2b49a;
   font-size: 12px;
   font-family: fantasy;
   margin-bottom: 15px;
@@ -372,14 +391,14 @@ hr {
 }
 
 .article-aside-flex .article-column .article-content .post .post-description h3 {
-  color: blue;
+  color: #183346;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 24px;
   margin: 0;
 }
 
 .article-aside-flex .article-column .article-content .post .post-description p {
-  color: green;
+  color: #99abb9;
   font-size: 18px;
   margin-bottom: 30px;
 }
@@ -391,7 +410,7 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(255, 0, 0, 0.322);
+  background-color: #dd837371;
   border: none;
   border-radius: 3px;
   width: 50%;
@@ -428,7 +447,7 @@ hr {
 }
 
 .aside-advertising .advertising-info h4 {
-  color: #c3cc6d;
+  color: #545480;
   text-align: center;
   font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -466,7 +485,7 @@ footer .footer-social h4,
 footer .footer-organization h4,
 footer .footer-information h4,
 footer .footer-newsletter h4 {
-  color: #8f682d;
+  color: #99abb9;
   font-size: 22px;
   margin-bottom: 10px;
 }
@@ -476,15 +495,15 @@ footer .footer-organization p,
 footer .footer-information p,
 footer .footer-newsletter p {
   margin-bottom: 0;
-  color: #cf5454;
+  color: #e8c77a;
 }
 
 footer .footer-social .sign-up-news input[type=email],
 footer .footer-organization .sign-up-news input[type=email],
 footer .footer-information .sign-up-news input[type=email],
 footer .footer-newsletter .sign-up-news input[type=email] {
-  color: gray;
-  font-family: "Lato", sans-serif;
+  color: #e8c77a;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
   padding: 5px 8px;
   border: 1px solid #ced4da;
@@ -499,12 +518,27 @@ footer .footer-information .sign-up-news button,
 footer .footer-newsletter .sign-up-news button {
   font-family: 'Heebo', sans-serif;
   color: #ffffff;
-  background-color: #969595dc;
+  background-color: #c3d4de;
   border: 0;
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 16px;
   padding: 5px 10px;
   letter-spacing: 2px;
+}
+
+.photos-source {
+  margin-top: 50px;
+  text-align: start;
+}
+
+.photos-source a {
+  color: #a7a6a6;
+}
+
+.contact-links {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

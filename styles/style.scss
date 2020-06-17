@@ -60,6 +60,11 @@ header {
       border-radius: 10px;
       letter-spacing: 2px;
       margin: 0 5px;
+
+      &:hover {
+        background-color: $submitButtonBackgroundColorHover;
+        color: $submitButtonFontColorHover;
+      }
     }
   }
 }
@@ -97,6 +102,10 @@ nav {
           text-transform: uppercase;
           font-weight: bold;
           font-size: $navLinksFontSize; 
+
+          &:hover {
+            color: $navLinksFontColorHover;
+          }
         }
       }
     }
@@ -154,7 +163,8 @@ hr {
 
       p {
         font-size: 22px;
-        color: violet;
+        color: $dinnerDishDescriptionFontColor;
+        margin-top: 10px;
       }
     }
   }
@@ -190,6 +200,14 @@ hr {
       flex-direction: column;
       justify-content: center;
       font-size: 18px;
+
+      h3 {
+        color: $aboutMeSectionTitleColor;
+        margin-bottom: 5px;
+      }
+      p {
+        color: $aboutMeSectionTextColor;
+      }
     }
 }
 
@@ -198,10 +216,10 @@ hr {
   flex-direction: column;
   flex: 1;
   text-align: center;
-  background-color:  rgba(182, 159, 159, 0.192);
+  background-color: $aboutMeSectionBackgroundColor;
 
   a {
-    color: rgb(65, 58, 58);
+    color: $aboutMeSectionDogTextColor;
     text-decoration: none;
     padding: 10px;
     font-size: 18px;
@@ -247,7 +265,7 @@ hr {
 
           .post-date {
             p {
-              color: red;
+              color: $postDateFontColor;
               font-size: 12px;
               font-family: fantasy;
               margin-bottom: 15px;
@@ -256,14 +274,14 @@ hr {
           }
 
           h3 {
-            color: blue;
+            color: $postTitleRecipeFontColor;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 24px;
             margin: 0;
           }
 
           p {
-            color: green;
+            color: $postParagraphRecipeFontColor;
             font-size: 18px;
             margin-bottom: 30px;
           }
@@ -271,7 +289,7 @@ hr {
           button {
             display: flex;
             justify-content: center;
-            background: rgba(255, 0, 0, 0.322);
+            background-color: $continueReadingFontColor;
             border: none;
             border-radius: 3px;
             width: 50%;
@@ -299,7 +317,7 @@ hr {
     }
 
     h4 {
-      color: rgb(195, 204, 109);
+      color: $advertisingTitleFontColor;
       text-align: center;
       font-size: 16px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -322,23 +340,23 @@ footer {
     margin: 10px 20px; 
 
     h4 {
-      color: rgb(143, 104, 45);
+      color: $footerTitleFontColor;
       font-size: 22px;
       margin-bottom: 10px;
     }
 
     p {
       margin-bottom: 0;
-      color: #cf5454;
+      color: $footerParagraphFontColor;
     }
 
     .sign-up-news {
       input[type=email] {
-        color: gray;
-        font-family: "Lato", sans-serif;
+        color: $inputFooterFontColor;
+        font-family: $mainFont;
         font-size: 12px;
         padding: 5px 8px;
-        border: 1px solid #ced4da;;
+        border: 1px solid #ced4da;
         border-radius: 5px;
         letter-spacing: 2px;
         margin-bottom: 20px;
@@ -347,7 +365,7 @@ footer {
       button {
         font-family: 'Heebo', sans-serif;
         color: #ffffff;
-        background-color: #969595dc;
+        background-color: $submitButtonFooterBackgroundColor;
         border: 0;
         border-radius: 3px;
         text-transform: uppercase;
@@ -357,4 +375,19 @@ footer {
       }
     }
   }
+}
+
+.photos-source {
+  margin-top: 50px;
+  text-align: start;
+
+  a {
+    color: #a7a6a6;
+  }
+}
+
+.contact-links {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
 }
