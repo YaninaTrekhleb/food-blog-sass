@@ -442,9 +442,52 @@ footer {
     }
   }
   
- .flex-footer {
-      flex-direction: column;
-      justify-content: center;
+  .about-me-section {
+    flex-direction: column;
+    .about-me-description {
+      margin-right: 0;
     }
+    .about-dog {
+      display: none;
+    }
+  }
+
+  h2 {
+    margin-left: 12px;
+  }
+
+  .article-aside-flex {
+    flex-direction: column;
+  }
+ 
+  .article-content .post {
+    flex-direction: column !important;
+  }
+
+  .aside-advertising {
+    flex-direction: column;
+  }
   
+  .advertising-info {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .flex-footer {
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-social,
+    .footer-organization,
+    .footer-information,
+    .footer-newsletter {
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+  }
+
+  .photos-source {
+    text-align: center;
+  }
 }
