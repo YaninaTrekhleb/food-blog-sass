@@ -5,4 +5,5 @@
 
 👉🏻 [Demo](https://yaninatrekhleb.github.io/food-blog-sass/)
 
-![Demo](./images/demo/ipad-demo.gif)
+![Demo iPad](./images/demo/ipad-demo.gif)
+![Demo iPhone](./images/demo/iphone-demo.gif)
